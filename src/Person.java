@@ -1,14 +1,59 @@
-import java.time.Year;
 import java.util.Calendar;
-import java.util.Date;
 
 public class Person {
-    String ID = "";
-    String firstName = "";
-    String lastName = "";
-    String Title = "";
-    int YOB = 0;
-    private ClassValue<Object> Calendar;
+    private String ID;
+    private String firstName;
+    private String lastName;
+    private String Title;
+    private int YOB;
+
+    public Person(String ID, String firstName, String lastName, String Title, int YOB){
+        this.ID = ID;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.Title = Title;
+        this.YOB = YOB;
+    }
+
+    public String getID(){
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getTitle() {
+        return Title;
+    }
+
+    public void setTitle(String Title) {
+        this.Title = Title;
+    }
+
+    public int getYOB() {
+        return YOB;
+    }
+
+    public void setYOB(int YOB) {
+        this.YOB = YOB;
+    }
 
     public String fullName() {
         return firstName + " " + lastName;
@@ -17,7 +62,9 @@ public class Person {
         return Title + " " + fullName();
     }
     public String getAge() {
-        return Calendar.get(Calendar.YEAR) - YOB;
+        Calendar calendar = java.util.Calendar.getInstance();
+        int currentYear = calendar.get(java.util.Calendar.YEAR);
+        return String.valueOf(currentYear - YOB);
     }
     public String getAge(int year) {
         return (String.valueOf(year - YOB));

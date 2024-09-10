@@ -14,7 +14,7 @@ public class ProductGenerator {
         String name = "";
         String desc = "";
         double cost = 0;
-        ArrayList<String> ppl = new ArrayList<>();
+        ArrayList<String> Product = new ArrayList<>();
         Scanner in = new Scanner(System.in);
         boolean done = false;
         File workingDirectory = new File(System.getProperty("user.dir"));
@@ -27,13 +27,13 @@ public class ProductGenerator {
             cost = SafeInput.getDouble(in, "Enter the product cost");
 
             productRec = ID + ", " + name + ", " + desc + ", " + cost;
-            ppl.add(productRec);
+            Product.add(productRec);
 
             done = SafeInput.getYNConfirm(in, "Are you done?");
 
         }while(!done);
 
-        for(String p: ppl)
+        for(String p: Product)
             System.out.println(p);
 
         try
@@ -47,7 +47,7 @@ public class ProductGenerator {
 
             // Finally can write the file LOL!
 
-            for(String rec : ppl)
+            for(String rec : Product)
             {
                 writer.write(rec, 0, rec.length());  // stupid syntax for write rec
                 // 0 is where to start (1st char) the write

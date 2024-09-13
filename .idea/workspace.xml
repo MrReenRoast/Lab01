@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2d972d-91b3-485c-9bb7-2f261cdc0e52" name="Changes" comment="Part 1 in progress">
-      <change afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
+    <list default="true" id="4f2d972d-91b3-485c-9bb7-2f261cdc0e52" name="Changes" comment="PersonGenerator and ProductGenerator working">
+      <change afterPath="$PROJECT_DIR$/src/SafeInputObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/SafeInputObjTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,10 @@
     "JUnit.PersonTest.executor": "Run",
     "JUnit.PersonTest.getAge.executor": "Run",
     "JUnit.PersonTest.setID.executor": "Run",
+    "JUnit.ProductTest.executor": "Run",
+    "JUnit.SafeInputObjTest.executor": "Run",
+    "JUnit.SafeInputObjTest.getDouble.executor": "Run",
+    "JUnit.SafeInputObjTest.getNonZeroLenString.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -82,21 +84,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.getAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab01" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PersonTest" />
-      <option name="METHOD_NAME" value="getAge" />
+      <option name="MAIN_CLASS_NAME" value="ProductTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SafeInputObjTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab01" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SafeInputObjTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SafeInputObjTest.getDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab01" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SafeInputObjTest" />
+      <option name="METHOD_NAME" value="getDouble" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.setID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SafeInputObjTest.getNonZeroLenString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab01" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PersonTest" />
-      <option name="METHOD_NAME" value="setID" />
+      <option name="MAIN_CLASS_NAME" value="SafeInputObjTest" />
+      <option name="METHOD_NAME" value="getNonZeroLenString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,9 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SafeInputObjTest.getDouble" />
+        <item itemvalue="JUnit.SafeInputObjTest.getNonZeroLenString" />
+        <item itemvalue="JUnit.ProductTest" />
+        <item itemvalue="JUnit.SafeInputObjTest" />
         <item itemvalue="JUnit.PersonTest" />
-        <item itemvalue="JUnit.PersonTest.getAge" />
-        <item itemvalue="JUnit.PersonTest.setID" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +150,7 @@
       <updated>1725906428899</updated>
       <workItem from="1725906429985" duration="10090000" />
       <workItem from="1725994013433" duration="4135000" />
-      <workItem from="1726184711977" duration="6330000" />
+      <workItem from="1726184711977" duration="9984000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <option name="closed" value="true" />
@@ -154,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725970289317</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="PersonGenerator and ProductGenerator working">
+      <option name="closed" value="true" />
+      <created>1726191180401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726191180401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +193,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
     <MESSAGE value="Part 1 in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 1 in progress" />
+    <MESSAGE value="PersonGenerator and ProductGenerator working" />
+    <option name="LAST_COMMIT_MESSAGE" value="PersonGenerator and ProductGenerator working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

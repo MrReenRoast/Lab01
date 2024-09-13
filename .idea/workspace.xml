@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2d972d-91b3-485c-9bb7-2f261cdc0e52" name="Changes" comment="PersonGenerator and ProductGenerator working">
-      <change afterPath="$PROJECT_DIR$/src/SafeInputObj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/SafeInputObjTest.java" afterDir="false" />
+    <list default="true" id="4f2d972d-91b3-485c-9bb7-2f261cdc0e52" name="Changes" comment="Part 3 done">
+      <change afterPath="$PROJECT_DIR$/src/ObjInputTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PersonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personTestData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/personTestData.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="UML Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +40,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.PersonGenerator.executor": "Run",
+    "Application.PersonReader.executor": "Run",
+    "Application.ProductGenerator.executor": "Run",
+    "Application.ProductReader.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Class",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.PersonTest.executor": "Run",
     "JUnit.PersonTest.getAge.executor": "Run",
@@ -63,6 +69,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Classwork/Fall 2024/Programming 2/Lab01/Lab01/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -74,7 +81,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ObjInputTest">
+    <configuration name="ObjInputTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ObjInputTest" />
+      <module name="Lab01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab01" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,15 +102,6 @@
       <module name="Lab01" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SafeInputObjTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab01" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SafeInputObjTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ObjInputTest" />
+        <item itemvalue="JUnit.PersonTest" />
         <item itemvalue="JUnit.SafeInputObjTest.getDouble" />
         <item itemvalue="JUnit.SafeInputObjTest.getNonZeroLenString" />
         <item itemvalue="JUnit.ProductTest" />
-        <item itemvalue="JUnit.SafeInputObjTest" />
-        <item itemvalue="JUnit.PersonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +155,8 @@
       <updated>1725906428899</updated>
       <workItem from="1725906429985" duration="10090000" />
       <workItem from="1725994013433" duration="4135000" />
-      <workItem from="1726184711977" duration="9984000" />
+      <workItem from="1726184711977" duration="11004000" />
+      <workItem from="1726195730880" duration="9577000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <option name="closed" value="true" />
@@ -184,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726191180401</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Part 3 done">
+      <option name="closed" value="true" />
+      <created>1726195045792</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726195045792</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +208,8 @@
     <MESSAGE value="Start" />
     <MESSAGE value="Part 1 in progress" />
     <MESSAGE value="PersonGenerator and ProductGenerator working" />
-    <option name="LAST_COMMIT_MESSAGE" value="PersonGenerator and ProductGenerator working" />
+    <MESSAGE value="Part 3 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 3 done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

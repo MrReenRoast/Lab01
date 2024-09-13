@@ -9,7 +9,6 @@ import static java.nio.file.StandardOpenOption.CREATE;
 
 public class PersonGenerator {
     public static void main(String[] args) {
-        String personRec = "";
         String ID = "";
         String firstName = "";
         String lastName = "";

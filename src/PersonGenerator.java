@@ -15,7 +15,7 @@ public class PersonGenerator {
         String lastName = "";
         String Title = "";
         int YOB = 0;
-        ArrayList<String> Person = new ArrayList<>();
+        ArrayList<String> ppl = new ArrayList<>();
         Scanner in = new Scanner(System.in);
         boolean done = false;
         File workingDirectory = new File(System.getProperty("user.dir"));
@@ -28,9 +28,9 @@ public class PersonGenerator {
             Title = SafeInput.getNonZeroLenString(in, "Enter their Title");
             YOB = SafeInput.getRangedInt(in, "Enter the year of birth ", 1940, 2010);
 
-            personRec = ID + ", " + firstName + ", " + lastName + ", " + Title+ ", " + YOB;
-            Person.add(personRec);
 
+            Person person = new Person(ID, firstName, lastName, Title, YOB);
+            ppl.add(person.toCSV());
             done = SafeInput.getYNConfirm(in, "Are you done?");
 
         }while(!done);
@@ -46,7 +46,7 @@ public class PersonGenerator {
 
             // Finally can write the file LOL!
 
-            for(String rec : Person)
+            for(String rec : ppl)
             {
                 writer.write(rec, 0, rec.length());  // stupid syntax for write rec
                 // 0 is where to start (1st char) the write

@@ -26,9 +26,8 @@ public class ProductGenerator {
             desc = SafeInput.getNonZeroLenString(in, "Enter the product description");
             cost = SafeInput.getDouble(in, "Enter the product cost");
 
-            productRec = ID + ", " + name + ", " + desc + ", " + cost;
-            Product.add(productRec);
-
+            Product product = new Product(ID, name, desc, cost);
+            Product.add(product.toCSV());
             done = SafeInput.getYNConfirm(in, "Are you done?");
 
         }while(!done);

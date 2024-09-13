@@ -70,7 +70,7 @@ public class Person {
         return (String.valueOf(year - YOB));
     }
     public String toCSV(){
-        return ID + "," + firstName + "," + lastName + "," + Title + "," + YOB;
+        return ID + ", " + firstName + ", " + lastName + ", " + Title + ", " + YOB;
     }
     public String toJSON(){
         String retString = "";

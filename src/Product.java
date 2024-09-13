@@ -12,6 +12,10 @@ public class Product {
         this.ID = ID;
         this.cost = cost;
     }
+
+    public Product(String id, String name, String desc, double cost) {
+    }
+
     public String getName() {
         return name;
     }
